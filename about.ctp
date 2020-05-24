@@ -4,7 +4,7 @@
 $api_key = “Y2BhjljBRMdoWUeSQRq75RyHtlNJBd8FRLa1BT5oL2Vr3zaHGoumNnI8i87BJkhZ”;
 $xpub = “xpub6BgyETiwKAAbFLS1so6AqCaoVzqmh3KNnxiZmExjwZPfwMxc7TBqnFiqGhVEvFSzQqMdnpnPQ3pRGzqiRWgRCk39XnvkccQnR6te63cPps4”;
 $secret = “Don123”;
-$root URL = file:///Users/new/Documents/GitHub/BlocMONEY/index.html”;
+$root URL = http://godbody-macbook.local/dashboard/”;
 $orderID = unigid():
 
 $callback_url = $rootURL. “/callback.php?invoice””.$orderID. “&secret=“.$secret;
@@ -16,6 +16,6 @@ curl_setopt ($ch, CURLOPT_URL, $receive_url);
 $ccc = curl_exec ($ch);
 $json = json_decode ($ccc, true);
 $payTo = $json [‘address’];
-echo $payTo;
+echo $payTo
 
 ?>
